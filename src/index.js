@@ -12,7 +12,7 @@
 //   </StrictMode>
 // );
 
-// +++++++++++ W3 ++++++++++++++++++++++
+// +++++++++++ W3 ++++++++++++++++++++++++
 
 import React from "react";
 import ReactDOM from "react-dom/client";
