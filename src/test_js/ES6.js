@@ -71,6 +71,8 @@ const myCar = new Model("Ford", "Mustang");
 
 // Before
 
+/*
+
 hello = function () {
   return "Hello World!";
 };
@@ -84,3 +86,24 @@ hii = () => {
 };
 
 console.log(hii());
+
+// It gets shorter! If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:
+
+hey = () => "hello React";
+console.log(hey());
+
+// Note: This works only if the function has only one statement.
+
+
+// If you have parameters, you pass them inside the parentheses:
+
+parameters_arrow = (val) => "Hello " + val;
+
+console.log(parameters_arrow("Dheeraj"));
+
+// In fact, if you have only one parameter, you can skip the parentheses as well:
+
+hello_1 = (val) => "Hello " + val;
+console.log(hello_1("React"));
+
+*/
