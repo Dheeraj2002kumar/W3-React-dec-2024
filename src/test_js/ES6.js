@@ -33,6 +33,7 @@ const myCar = new Car1("Ford");
 
 // A class created with a class inheritance inherits all the methods from another class:
 
+/*
 class Car {
   constructor(name) {
     this.brand = name;
@@ -57,6 +58,29 @@ class Model extends Car {
 const myCar = new Model("Ford", "Mustang");
 // console.log(myCar.show());
 
+*/
+
 // The super() method refers to the parent class.
 
 // By calling the super() method in the constructor method, we call the parent's constructor method and get access to the parent's properties and methods.
+
+// +++++++++++ React ES6 Arrow Functions ++++++++++++++
+
+// Arrow Functions
+// Arrow functions allow us to write shorter function syntax:
+
+// Before
+
+hello = function () {
+  return "Hello World!";
+};
+
+console.log(hello());
+
+// with arrow function
+
+hii = () => {
+  return "This is arrow function!";
+};
+
+console.log(hii());
