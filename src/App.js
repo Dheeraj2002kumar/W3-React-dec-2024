@@ -1,4 +1,14 @@
 import "./styles.css";
+import { Job, Job1, Garage } from "./component/function_Component";
+
+export default function App() {
+  return (
+    <div>
+      {myElement7}
+      <Garage />
+    </div>
+  );
+}
 
 // ------------------------------
 
@@ -55,7 +65,3 @@ const myElement7 = <h1>{x1 < 10 ? "Hello React!" : "Goodbye"}</h1>;
 // Note that in order to embed a JavaScript expression inside JSX, the JavaScript must be wrapped with curly braces, {}.
 
 // -------------------------------
-
-export default function App() {
-  return myElement7;
-}
