@@ -298,3 +298,35 @@ const myUpdatedVehicle = { ...myVehicle3, ...updateMyVehicle };
 // console.log(myUpdatedVehicle);
 
 // Notice the properties that did not match were combined, but the property that did match, color, was overwritten by the last object that was passed, updateMyVehicle. The resulting color is now yellow.
+
+/*
+// +++++++++++++++++++++++++++ Modules ++++++++++++++++++++++++
+// Named Exports
+// You can create named exports two ways. In-line individually, or all at once at the bottom.
+
+// in-line individually
+
+export const name = "Jesse";
+export const age = 40;
+
+// All at once at the bottom:
+const name1 = "Jesse";
+const age1 = 40;
+
+export { name1, age1 };
+
+// ------------------------------------------------------
+// Default Exports
+// Let us create another file, named message.js, and use it for demonstrating default export.
+
+// You can only have one default export in a file.
+
+const message = () => {
+  const name = "Jesse";
+  const age = 40;
+  return `${name} is ${age} years old. `;
+};
+
+export default message;
+
+*/
