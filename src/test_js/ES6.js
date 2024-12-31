@@ -177,6 +177,7 @@ console.log(myList);
 
 //Here is the old way of assigning array items to a variable:
 
+/*
 const vehicles = ["mustang", "f-150", "expedition"];
 
 // old way
@@ -194,3 +195,23 @@ const vehicles1 = ["mustang", "f-150", "expedition"];
 const [car1, truck1, suv1] = vehicles1;
 
 console.log(`${car1}, ${truck1}, ${suv1}`);
+
+*/
+
+// Destructuring comes in handy when a function returns an array:
+
+function calculate(a, b) {
+  const add = a + b;
+  const subtract = a - b;
+  const multiply = a * b;
+  const divide = a / b;
+
+  return [add, subtract, multiply, divide];
+}
+
+const [add, subtract, multiply, divide] = calculate(4, 7);
+// console.log(add);
+// console.log(subtract);
+// console.log(multiply);
+// console.log(divide);
+// +++++++++++++
