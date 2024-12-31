@@ -239,5 +239,27 @@ myVehicle1(vehiclesOne);
 
 function myVehicle1({ type, color, brand, model }) {
   const message = `My ${type} is a ${color} ${brand} ${model}`;
+  // console.log(message);
+}
+
+// We can even destructure deeply nested objects by referencing the nested object then using a colon and curly braces to again destructure the items needed from the nested object:
+
+const vehicles2 = {
+  brand: "Ford",
+  model: "Mustang",
+  type: "car",
+  year: 2021,
+  color: "red",
+  registration: {
+    city: "Houston",
+    state: "texas",
+    country: "USA",
+  },
+};
+
+myVehicle2(vehicles2);
+
+function myVehicle2({ model, registration: { state } }) {
+  const message = `My ${model} is registered in ${state}.`;
   console.log(message);
 }
