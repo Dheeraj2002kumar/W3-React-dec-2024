@@ -1,6 +1,32 @@
 import "./styles.css";
 import { Job, Job1, Garage } from "./component/function_Component";
+// import Car from "./component/Class_Components";
 
+import Car from "./component/State";
+export default function App() {
+  return (
+    <>
+      <Car />
+    </>
+  );
+}
+
+/*
+// +++++++++ Class_Components.js ++++++++++++
+import Garage1 from "./component/Class_Components";
+
+export default function App() {
+  return (
+    <>
+      <Car model="Mustang" />
+      <Garage1 />
+    </>
+  );
+}
+*/
+
+// ++++++++ function_Component.js +++++++++++++
+/*
 export default function App() {
   return (
     <div>
@@ -9,7 +35,7 @@ export default function App() {
     </div>
   );
 }
-
+*/
 // ------------------------------
 
 /* 
