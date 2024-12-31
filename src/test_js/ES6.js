@@ -196,7 +196,6 @@ const [car1, truck1, suv1] = vehicles1;
 
 console.log(`${car1}, ${truck1}, ${suv1}`);
 
-*/
 
 // Destructuring comes in handy when a function returns an array:
 
@@ -205,7 +204,7 @@ function calculate(a, b) {
   const subtract = a - b;
   const multiply = a * b;
   const divide = a / b;
-
+  
   return [add, subtract, multiply, divide];
 }
 
@@ -214,4 +213,31 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
 // console.log(subtract);
 // console.log(multiply);
 // console.log(divide);
-// +++++++++++++
+
+*/
+// +++++++++++++ Destructuring Objects +++++++++
+
+// Here is the old way of using an object inside a function:
+const vehiclesOne = {
+  brand: "Ford",
+  model: "Mustang",
+  type: "car",
+  year: 2021,
+  color: "red",
+};
+
+myVehicle(vehiclesOne);
+
+// old way
+function myVehicle(vehicles) {
+  const message = `My ${vehicles.type} is a ${vehicles.color} ${vehicles.brand} ${vehicles.model}`;
+  // console.log(message);
+}
+
+// Here is the new way of using an object inside a function:
+myVehicle1(vehiclesOne);
+
+function myVehicle1({ type, color, brand, model }) {
+  const message = `My ${type} is a ${color} ${brand} ${model}`;
+  console.log(message);
+}
