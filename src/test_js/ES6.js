@@ -261,5 +261,38 @@ myVehicle2(vehicles2);
 
 function myVehicle2({ model, registration: { state } }) {
   const message = `My ${model} is registered in ${state}.`;
-  console.log(message);
+  // console.log(message);
 }
+
+// ++++++++++++++++++ Spread Operator ++++++++++++++++
+
+const numbersOne = [1, 2, 3];
+const numberTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numberTwo];
+// console.log(numbersCombined);
+
+// Assign the first and second items from numbers to variables and put the rest in an array:
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const [one, two, ...rest] = numbers;
+// console.log(one);
+// console.log(two);
+// console.log(rest);
+
+//We can use the spread operator with objects too:
+// combine these two objects:
+
+const myVehicle3 = {
+  brand: "Ford",
+  model: "Mustang",
+  color: "Red",
+};
+
+const updateMyVehicle = {
+  type: "car",
+  year: 2021,
+  color: "yellow",
+};
+
+const myUpdatedVehicle = { ...myVehicle3, ...updateMyVehicle };
+// console.log(myUpdatedVehicle);
