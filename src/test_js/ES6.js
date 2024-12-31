@@ -159,3 +159,38 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor);
 */
 
 //---------------------------------------------------
+
+// Array Method
+
+/*
+const myArray = ["apple", "banana", "orange"];
+
+const myList = myArray.map((item) => item);
+
+console.log(myList);
+
+*/
+
+//----------- Destructuring --------------------
+
+// Destructing Arrays
+
+//Here is the old way of assigning array items to a variable:
+
+const vehicles = ["mustang", "f-150", "expedition"];
+
+// old way
+const car = vehicles[0];
+const truck = vehicles[1];
+const suv = vehicles[2];
+
+console.log(`${car}, ${truck}, ${suv}`);
+// ---------------
+
+// Here is the new way of assigning array items to a variable:
+
+const vehicles1 = ["mustang", "f-150", "expedition"];
+
+const [car1, truck1, suv1] = vehicles1;
+
+console.log(`${car1}, ${truck1}, ${suv1}`);

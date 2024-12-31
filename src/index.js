@@ -21,6 +21,13 @@ function Hello(Props) {
   return <h1>Hellow React.js</h1>;
 }
 
+// function Hello(Props) {
+//   const myArray = ["apple", "banana", "orange"];
+
+//   const myList = myArray.map((item) => <p>{item}</p>);
+//   return myList;
+// }
+
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 root.render(<Hello />);
